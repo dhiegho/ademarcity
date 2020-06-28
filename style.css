@@ -1,137 +1,78 @@
 
-* {
-  box-sizing: border-box;
+
+    .layout{
+        display: grid;
+        grid-gap:10px;
+    grid-template-areas:  
+    "header header header"
+     "main main aside"
+     "footer footer footer";
 
 
-}
-
-body {
-    font-family: sans-serif;
-    color: black;
-    background-color: white;
-    display: grid;
+    grid-template-rows: auto;
+    }
+    .grid{
+        background: #7159c1;
+    }
     
-  }
-  
-  header {
-    background-color:white;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-    color: black;
-    border:solid 10px #8A56E6;
-    
-  }
-  
-  
-  nav {
-    float: left;
-    width: 30%;
-    height: 300px; 
-    background: white;
-    padding: 20px;
-    border: solid 10px#8A56E6;
-  
-  }
-  
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 45px;
-  }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: white;
-    height: 300px; 
-    border: solid 10px #8A56E6;
-  }
-  
-
-  
- 
-  footer {
-    background-color:white;
-    padding: 10px;
-    text-align: center;
-    color:black;
-    border:solid 10px   #8A56E6;
-  
-  }
-  div{
-    border: solid 10px  #8A56E6;
-    font-family: 'ChomskyRegular';
+    .grid-header{
+        grid-area: header;
+        border: solid 10px black;
+        
+    }
+    .grid-main{
+        grid-area: main;
+        margin-left: 1px;
+        border: solid 10px black;
+        text-align: justify;
+        max-height: fit-content;
+        
+    }
+    .grid-aside{
+        grid-area:aside;
+        margin-right: 1px;
+        border: solid 10px black;
+        
+    }
+    .grid-footer{
+        grid-area: footer;
+        border: solid 10px black;
+        
     
     
-  
-  }
-  img{
-width: 1350px;
-height: 650px;
-border-left:solid 10px  #8A56E6;
-border-right: solid 10px  #8A56E6;
-    
-  }
-  a:hover{
-    background-color: #8A56E6;
-    display:grid;
-  }
- 
-p{
-  text-align: justify;
-}
-.covid{
-  text-align: center;
+    }
+    h1{
+        text-align: center;
+     color: white;
+     font-size: 150px;
+    }
 
-}
-.guilhermefoto{
-border:solid 10px  #8A56E6;
-
-}
-.guilherme{
-  text-align: center;
-  font-size: 40px;
-  background-color: black;
-  color: white;  
-  border:solid 10px  #8A56E6
-
-
-}
-.paragrafo{
-  color:black;
-    border:solid 10px   #8A56E6;
-    font-family: sans-serif;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-h1{
-  text-align: center;
-  font-size: 120px;
-  grid-template-columns: 15px;
-  color:#8A56E6;
-  border:#8A56E6 ;
-  
-}
-.saopaulo{
-
-  border: #8A56E6 ;
-}
-main{
-  padding-left: 15px;
-    padding-right: 15px;
-    border:solid 10px   #8A56E6;
-}
 h2{
-  font-size: 50px;
+   text-align: center; 
+   color:white
+}
+p{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+h3{
+   padding: 5px;
+
 
 }
-.imagem4{
-  border:solid 10px white;
-  width: 1350px;
-  height: 650px;
- 
+
+.fotosaopaulo {
+padding-left: 150px;
 }
+.fotoprincipal{
+    padding-left: 18px;
+}
+.fotolistadebairros{
+    padding-left: 500px;
+   
+}
+.fotocidadeademar{
+    padding-left: 400px;
+}
+
